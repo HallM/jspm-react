@@ -2,12 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, browserHistory } from 'react-router'
 
-import Home from './routes/home'
 import { IntlProvider, addLocaleData } from 'react-intl'
 import en from 'react-intl/locale-data/en'
 addLocaleData(en)
 
-const routes = <Route path='/' component={Home} />
+import routes from './routes'
 
 class RenderForcer extends React.Component {
   componentWillMount () {
